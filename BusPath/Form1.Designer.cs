@@ -33,9 +33,6 @@ namespace BusPath
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Text = "Form1";
-
-            var fr = new FileReader.FileReader();
-            fr.GetRoutes("C://Bus.txt");
         }
 
         #endregion

@@ -86,7 +86,7 @@ namespace BusPath.FileReader
                 result.Add(result.Count + 1, stops);
             }
 
-            return new Dictionary<int, List<BusStop>>();
+            return result;
         }
     }
 }

@@ -15,10 +15,10 @@ namespace BusPath.Models
             BusStops = busStops;
         }
 
-        int BusId { get; }
+        public int BusId { get; }
         //int StopQty { get; }
-        DateTime DepartureTime { get; }
-        int Price { get; }
-        List<BusStop> BusStops { get; }
+        public DateTime DepartureTime { get; }
+        public int Price { get; }
+        public List<BusStop> BusStops { get; }
     }
 }

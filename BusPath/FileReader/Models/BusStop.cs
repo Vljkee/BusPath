@@ -12,7 +12,7 @@ namespace BusPath.Models
             MinutsToNextStop = minutsToNextStop;
         }
 
-        int StopId { get; }
-        int MinutsToNextStop { get; }
+        public int StopId { get; }
+        public int MinutsToNextStop { get; }
     }
 }
