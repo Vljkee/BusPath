@@ -3,9 +3,6 @@ using BusPath.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BusPath.FileReader.Implementations
 {
@@ -16,7 +13,6 @@ namespace BusPath.FileReader.Implementations
             var routeDescription = File.ReadAllLines(path);
 
             var routesQty = int.Parse(routeDescription[0]);
-            //var uniqueStopsQty = int.Parse(routeDescription[2]);
             var departureTimes = GetDepartureTimes(routeDescription[4]);
             var prices = GetPrices(routeDescription[6]);
             var busStops = GetBusStops(routeDescription[8..(routeDescription.Length)]);

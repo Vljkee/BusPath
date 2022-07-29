@@ -5,7 +5,6 @@ using BusPath.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace BusPath.BLL.Implementations
 {
@@ -47,12 +46,6 @@ namespace BusPath.BLL.Implementations
         {
             var filteredSchedules = schedules.Where(sch => sch.Stops.Any(s => s.StopId == startStopId)).ToList();
             return GetBusStopIds(filteredSchedules);
-        }
-
-        public List<DateTime> GetStartDateTime(List<Schedule> schedules, int startStopId)
-        {
-            var filteredSchedules = schedules.Where(s => s.Stops.Any(s => s.StopId == startStopId));
-            return new List<DateTime>();
         }
 
         public List<(int busId, DateTime arrivalTime)> GetFastestBusIdAndArrivalTime(
