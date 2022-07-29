@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BusPath.FileReader.Contracts
 {
-    public interface IFileReader
+    public interface IReader
     {
         List<BusRoute> GetRoutes(string path);
     }

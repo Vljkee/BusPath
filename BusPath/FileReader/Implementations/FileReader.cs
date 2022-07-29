@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusPath.FileReader
+namespace BusPath.FileReader.Implementations
 {
-    public class FileReader : IFileReader
+    public class Reader : IReader
     {
         public List<BusRoute> GetRoutes(string path)
         {
